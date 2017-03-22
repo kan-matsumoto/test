@@ -1,3 +1,3 @@
 #!/bin/bash
-mkdir -p $HOME/test
+touch $HOME/test.log
 
