@@ -1,0 +1,16 @@
+version: 0.1
+
+phases:
+  instal:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  post_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+
