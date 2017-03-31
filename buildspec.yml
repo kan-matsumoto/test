@@ -11,8 +11,8 @@ phases:
     commands:
       - echo Test started on `date`
       - echo `pwd`
-      - echo "#cec2itc#" | su - batchuser
-      - mkdir -p home/batchuser/build_test
+      - cd /home/batchuser
+      - mkdir -p ./build_test
       - echo Test completed on `date`
   post_build:
     commands:
