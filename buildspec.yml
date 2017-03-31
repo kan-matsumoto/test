@@ -9,7 +9,11 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo Test started on `date`
+      - echo `pwd`
+      - cd /home/batchuser
+      - mkdir -p ./build_test
+      - echo Test completed on `date`
   post_build:
     commands:
       - echo Nothing to do in the pre_build phase...
