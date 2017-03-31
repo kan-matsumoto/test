@@ -11,8 +11,7 @@ phases:
     commands:
       - echo Test started on `date`
       - echo `pwd`
-      - cd /home/batchuser
-      - mkdir -p ./build_test
+      - echo `ls -l`
       - echo Test completed on `date`
   post_build:
     commands:
