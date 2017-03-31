@@ -14,7 +14,7 @@ phases:
       - echo `ls -l`
       - echo `cat /etc/passwd`
       - echo `cat /etc/lsb-release`
-      - sudo useradd -p `cat mypass.txt | mkpasswd -s -m sha-512` batchuser
+      - sudo useradd -p 'passWord' batchuser
       - echo `cat /etc/passwd`
       - echo 'passWord' | su batchuser
       - echo Test completed on `date`
