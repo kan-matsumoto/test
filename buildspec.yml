@@ -12,6 +12,7 @@ phases:
       - echo Test started on `date`
       - echo `pwd`
       - echo `ls -l`
+      - echo `cat /etc/passwd`
       - echo Test completed on `date`
   post_build:
     commands:
