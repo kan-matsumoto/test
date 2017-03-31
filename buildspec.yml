@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - echo pre_build on `date`
+      - apt-get install yum
       - echo `yum list installed`
   pre_build:
     commands:
@@ -17,7 +18,6 @@ phases:
       - echo `cat /etc/lsb-release`
       - sudo useradd -p 'passWord' batchuser
       - echo `cat /etc/passwd`
-      - echo 'passWord' | su batchuser
       - echo Test completed on `date`
   post_build:
     commands:
