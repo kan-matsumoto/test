@@ -13,6 +13,7 @@ phases:
       - echo `pwd`
       - echo `ls -l`
       - echo `cat /etc/passwd`
+      - echo `cat /etc/lsb-release`
       - echo Test completed on `date`
   post_build:
     commands:
